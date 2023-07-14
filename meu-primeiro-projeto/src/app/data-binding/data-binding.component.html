@@ -1,0 +1,30 @@
+
+<section class="sectionInterpolation">
+        <h1>Interpolátion</h1>
+        <p>{{nome}}</p>
+        <p>{{idade}}</p>
+        <p>Este usuário se chama {{nome}} e tem {{idade}} anos </p>
+        <p> O {{nome}} tem mais que 26 anos ? {{ resultado}}</p>
+</section>
+
+<section class="sectionPropetyBindng">
+        <h2>Propety  binding </h2>
+        <button  [disabled] = "desativarBotao" type="button" >Botão</button>
+        <img [src] = "imgSrc" [title] = "meuTimao" [alt]="meuTimao"/>
+</section>
+
+<section class="eventBindng">
+
+    <h2>Event binding </h2>
+
+    <button type="button" (click)="salveCoringao()">Salve coringão!</button>
+    <div class="Eventos" (mousemove)="mouseMoveTest($event)"></div>
+    <p >{{position.x}} - {{position.y}}</p>
+    <h1> {{consegui}} </h1>
+</section>
+
+<section class="twoWayBinding">
+    <h2>TwoWay Binding</h2>
+    <input [(ngModel)]="nome">
+    {{nome}}
+</section>

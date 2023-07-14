@@ -5,18 +5,9 @@ import { Component, Input, OnChanges, OnInit} from '@angular/core';
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.css']
 })
-export class TitleComponent implements OnInit , OnChanges{
+export class TitleComponent{
 
 @Input() public title: string = "Salve rapazeada"
-
-
-  constructor(){ }
-  ngOnChanges(): void{
-    console.log("Alterado com sucesso")
-
-  }
-
-  ngOnInit():void { }
 
 }
 
