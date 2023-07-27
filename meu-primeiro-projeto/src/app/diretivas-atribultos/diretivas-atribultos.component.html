@@ -1,0 +1,14 @@
+
+    <h1>Diretiva atribultos</h1>
+    <p [ngClass]="{'active': valor, 'disabled': !valor}"> Lucas Bastos Delcico</p>
+
+    <p [ngStyle]="{'height':heightpx , 'background': backgroundColor}">Luiza</p>
+
+<input [(ngModel)] = "nome">
+
+<button (click) = "salvar()">Salvar </button>
+
+<button (click) = "excluir()">Excluir  </button>
+<li *ngFor="let item of list">
+    {{item.nome}}
+</li>

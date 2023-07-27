@@ -1,0 +1,28 @@
+<div class="diretivasEstruturais">
+  <h1>Diretivas estruturais !</h1>
+  <h2>NG IF (*ngIf)</h2>
+  <p *ngIf="condition || !condition" >{{msgPastel}}</p>
+  <h2>NG FOR (*ngFor)</h2>
+  <ul>
+     <li *ngFor="let item of list ; let i = index " (click)="OnclickEventList($event)">
+     [{{ i }}] {{item.nome}} tem {{item.idade}} anos</li>
+  </ul>
+  
+  <button (click)="onClickAddList()">Adicionar nome e idade </button>
+  <div>
+     <h2>SwitchCase</h2>
+
+     <input type="text" [(ngModel)]="nome">
+     <div [ngSwitch]="nome">
+        <p *ngSwitchCase="'Lucas'">
+           Lucas 
+        </p>
+        <p *ngSwitchCase="'Luiza' ">
+          Luiza 
+       </p>
+       <p *ngSwitchDefault>
+        Deu bom não
+     </p>
+     </div>
+  </div>
+</div>
