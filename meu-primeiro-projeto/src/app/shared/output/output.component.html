@@ -1,0 +1,7 @@
+<h1>Compreendendo um pouco mais sobre output de dados:</h1>
+
+<p *ngFor="let itens of list; let i = index">
+   
+     {{itens.nome}} e {{itens.idade}}
+     <button (click)="getDados(i)">Enviar Dados</button>
+</p>
