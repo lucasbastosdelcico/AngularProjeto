@@ -1,4 +1,4 @@
-# AngularProjeto
+# Meus primeiros contatos com Angular
 Criei esse repositório para estudar angular.</br>
 A idéia desse repositório é mostrar a minha evolução utilizando o framework Angular que não tenho muito conhecimento.</br>
 Decidi utilizar o <strong>GitHub</strong> como reposítorio porque é uma ferramenta muito utilizada e eu também tenho pouco conhecimento.</br>
