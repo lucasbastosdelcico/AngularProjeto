@@ -1,7 +1,7 @@
 import { Component, } from '@angular/core';
 
 @Component({
-  selector: 'app-root' ,
+  selector: 'app-root',
   template: `
   <!--
  <app-title></app-title>
@@ -15,26 +15,29 @@ import { Component, } from '@angular/core';
 <br>
 
   <button (click)="add()">Add</button>
-  -->
+  
   <ng-template [ngIf] = "getDados">
   <h1> {{getDados.nome}}</h1>
   <h2> {{getDados.idade}}</h2>
   </ng-template>
-  <app-output (enviarDados)= "setDados($event)"></app-output>
+  <app-output (enviarDados)= "setDados($event)"></app-output>-->
+  
+  <app-food-list></app-food-list>
+  <app-food-add></app-food-add>
   `
 })
 
 export class AppComponent {
 
-  constructor(){};
-public getDados : {nome: string , idade : number} | undefined;
+  constructor() { };
+  public getDados: { nome: string, idade: number } | undefined;
 
- public  addValue : number =0
- public add (){
+  public addValue: number = 0
+  public add() {
 
-return this.addValue ++
- }
-public setDados(event : {nome:string , idade:number}){
-  this.getDados = event
-}
+    return this.addValue++
+  }
+  public setDados(event: { nome: string, idade: number }) {
+    this.getDados = event
+  }
 }
